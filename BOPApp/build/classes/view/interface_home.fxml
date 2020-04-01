@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Interface_homeController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="775.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#changePane_home" text="Tampilan Awal" />
+                  <MenuItem mnemonicParsing="false" onAction="#changePane_logout" text="Log Out" />
+                  <MenuItem mnemonicParsing="false" onAction="#eventExit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Data Barang">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#changePane_Barang" text="Kelola Data Barang" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionCetakBarang" text="Cetak Data Barang" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Data Transaksi">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#chanePane_Transaksi" text="Kelola Data Transaksi" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionCetakTransaksi" text="Cetak Data Transaksi" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Data Member">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#changePane_Member" text="Kelola Data Member" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionCetakMember" text="Cetak Data Member" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Data Pegawai">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#changePane_Pegawai" text="Kelola Data Pegawai" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionCetakPegawai" text="Cetak Data Pegawai" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#changePane_Laporan" text="Laporan">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Laporan Toko" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="pane_home" layoutX="1.0" layoutY="28.0" prefHeight="478.0" prefWidth="775.0">
+         <children>
+            <ImageView fitHeight="149.0" fitWidth="159.0" layoutX="292.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/kisspng-graphic-designer-logo-idea-5abb16b19035d0.5985616515222104815907.jpg" />
+               </image>
+               <effect>
+                  <Blend mode="LIGHTEN">
+                     <topInput>
+                        <Glow level="0.0" />
+                     </topInput>
+                  </Blend>
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="242.0" prefHeight="0.0" prefWidth="526.0" text="Selamat Datang" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Edwardian Script ITC" size="68.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="329.0" prefHeight="42.0" prefWidth="438.0" text="di Sistem Business of Lamp" textAlignment="CENTER">
+               <font>
+                  <Font name="Constantia" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="268.0" layoutY="460.0" prefHeight="18.0" prefWidth="196.0" text="2020 @copyright BusinessD" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

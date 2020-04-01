@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="512.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <LineChart layoutX="23.0" layoutY="14.0" prefHeight="391.0" prefWidth="694.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="66.0" layoutY="409.0" prefHeight="18.0" prefWidth="115.0" text="Data Pendapatan" />
+      <DatePicker layoutX="229.0" layoutY="405.0" prefHeight="26.0" prefWidth="121.0" />
+      <Label layoutX="400.0" layoutY="410.0" text="Sampai" />
+      <DatePicker layoutX="490.0" layoutY="405.0" prefHeight="26.0" prefWidth="115.0" />
+      <Button layoutX="661.0" layoutY="406.0" mnemonicParsing="false" text="Cetak" />
+   </children>
+</AnchorPane>
